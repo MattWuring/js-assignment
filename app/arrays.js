@@ -67,7 +67,10 @@ exports.arraysAnswers = {
    * @param {Array} arr
    * @param {Number} item
    */
-  count: (arr, item) => {},
+  count: (arr, item) => {
+    arr = arr.filter(value => value == item);
+    return arr.length;
+  },
 
   /**
    * BONUS: Find duplicates in an array
